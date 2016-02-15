@@ -15,30 +15,30 @@ Oh, and I also like to write press-releases in what I call "Oprah-speak" for mai
 
 Once the project moves into development, the press release can be used as a touchstone; a guiding light. The product team can ask themselves, "Are we building what is in the press release?" If they find they're spending time building things that aren't in the press release (overbuilding), they need to ask themselves why. This keeps product development focused on achieving the customer benefits and not building extraneous stuff that takes longer to build, takes resources to maintain, and doesn't provide real customer benefit (at least not enough to warrant inclusion in the press release).
  -->
-
+ 
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+  > Sublime Shortcuts Practice (better name to come)
 
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+  > This is for any user of Sublime Text who wants to improve their efficiency by learning keyboard shortcuts.
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  > This product will help Sublime Text users learn and practice keyboard shortcuts, which will improve their effeciency and productivity when using Sublime. The user will be shown a Sublime command and will be asked to type the keyboard shortcut for that command. They will receive immediate feedback on accuracy and will be shown the correct keyboard shortcut before moving on to the next one.
 
 ## Problem ##
-  > Describe the problem your product solves.
+  > When working in Sublime, users who do not know shortcuts will spend more time typing than is necessary. It can be difficult to learn shortcuts while working because users don't want to take the time to look up a shortcut when it is faster to use the mouse or type things out in that moment.
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+  > This product will provide an easy and fun way to learn Sublime shortcuts outside of the text editor.
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
+  > Sublime Shortcuts Practice will make learning Sublime Text shortcuts fun and easy, resulting in improved effeciency and productivity.
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  > Visit website, start practicing.
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  > I'm twice as fast and more productive after learning Sublime keyboard shortcuts!
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  > (Same as how to get started??) Visit website, start practicing.
