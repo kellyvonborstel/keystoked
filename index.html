@@ -7,6 +7,7 @@
 <body>
   <h1>Keystoked</h1>
   <h2>practice sublime keyboard shortcuts</h2>
+  <h3>Score: <span class="score"></span></h3>
   <h3>type keyboard shortcut for: </h3>
   <p class="command"></p>
   <form>
@@ -24,16 +25,23 @@
     var listener = new window.keypress.Listener();
     var counter = 0;
 
-    var detect = function() {
+    var score = 0;
+    var incrementScore = function() {
+      score++;
+      $('.score').text(score);
+    };
+
+    var detectKeys = function() {
       $('.command').text(shortcuts[counter].command);
       $('.answer').text(shortcuts[counter].correct);
       listener.simple_combo(shortcuts[counter].keys, function() {
         counter++;
-        detect();
+        incrementScore();
+        detectKeys();
       });
     };
 
-    detect();
+    detectKeys();
 
   </script>
   
