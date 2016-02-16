@@ -1,0 +1,53 @@
+
+@font-face {
+  font-family: 'AlteHaasGroteskRegular';
+  src: 
+  local('Alte Haas Grotesk Regular'),
+  local('Alte-Haas-Grotesk-Regular'),
+  url('../fonts/AlteHaasGroteskRegular.ttf') 
+  format('truetype');
+}
+@font-face {
+  font-family: 'AlteHaasGroteskBold';
+  src: 
+  local('Alte Haas Grotesk Bold'),
+  local('Alte-Haas-Grotesk-Bold'),
+  url('../fonts/AlteHaasGroteskBold.ttf') 
+  format('truetype');
+  font-weight: bold;
+}
+body {
+  background-color: #c0ecff;
+  font-family: 'Lucida Grande', Verdana, sans-serif;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+}
+.container {
+  margin: 70px auto;
+  padding: 70px;
+  width: 70%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  max-width: 500px;
+}
+h1 {
+  font-size: 4em;
+  font-family: 'AlteHaasGroteskRegular';
+}
+h2 {
+  margin-bottom: 60px;
+}
+.content {
+  margin-top: 100px;
+  height: 100%;
+}
+img {
+  margin: -50px auto -80px;
+  display: inherit;
+}
+input {
+  padding: 5px;
+  font-size: 1.3em;
+  color: #bbb;
+}
