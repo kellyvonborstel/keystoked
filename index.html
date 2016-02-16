@@ -71,6 +71,9 @@
     };
     var listener = new window.keypress.Listener(inputField, listenerDefaults);
 
+    $('#inputField').keypress(function() {
+      return false;
+    });
 
     var score = 0;
     var incrementScore = function() {
