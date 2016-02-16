@@ -11,6 +11,7 @@
     <section class="content">
       <h2>practice sublime keyboard shortcuts</h2>
       <h3>Score: <span class="score"></span></h3>
+      <button>start</button>
       <p>Type keyboard shortcut for: </p>
       <h3 class="command"></h3>
       <input type="text" id="inputField">
@@ -23,7 +24,7 @@
 
   <script>
 
-    document.getElementById('inputField').focus();
+    
 
     var counter = 0;
     var delay = 3000;
@@ -62,8 +63,11 @@
         detectKeys();
       });
     };
-
-    detectKeys();
+    console.log(shortcuts.length);
+    $('button').on('click', function() {
+      document.getElementById('inputField').focus();
+      detectKeys();
+    });
 
   </script>
   
