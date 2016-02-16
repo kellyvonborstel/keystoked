@@ -3,52 +3,52 @@ var shortcuts = [
 
   {
     command: 'join lines',
-    correct: '⌘J',
+    correct: '⌘ + J',
     keys: "meta j" 
   },
   {
     command: 'cut line',
-    correct: '⌘X',
+    correct: '⌘ + X',
     keys: 'meta x' 
   },
   {
     command: 'goto line in current file',
-    correct: '^G',
+    correct: '^ + G',
     keys: "ctrl g" 
   },
   {
     command: 'soft undo',
-    correct: '⌘U',
+    correct: '⌘ + U',
     keys: "meta u" 
   },
   {
     command: 'use selection for find',
-    correct: '⌘E',
+    correct: '⌘ + E',
     keys: 'meta e' 
   },
   {
     command: 'select word',
-    correct: '⌘D',
+    correct: '⌘ + D',
     keys: "meta d" 
   },
   {
     command: 'goto matching parentheses',
-    correct: '⌃M',
+    correct: '⌃ + M',
     keys: 'ctrl m' 
   },
   {
     command: 'find next',
-    correct: '⌘G',
+    correct: '⌘ + G',
     keys: "meta g" 
   },
   {
     command: 'comment current line',
-    correct: '⌘/',
+    correct: '⌘ + /',
     keys: 'meta /' 
   },
   {
     command: 'indent current line(s)',
-    correct: '⌘]',
+    correct: '⌘ + ]',
     keys: 'meta ]' 
   }
   

@@ -7,7 +7,7 @@
   <style>
     body {
       background-color: #c0ecff;
-      font-family: Verdana, sans-serif;
+      font-family: 'Lucida Grande', Verdana, sans-serif;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
       text-align: center;
@@ -34,6 +34,7 @@
     input {
       padding: 5px;
       font-size: 1.3em;
+      color: #bbb;
     }
   </style>
 
@@ -46,23 +47,30 @@
       <h3>Score: <span class="score"></span></h3>
       <p>Type keyboard shortcut for: </p>
       <h3 class="command"></h3>
-      <form>
-        <input type="text" id="inputField">
-      </form>
-      <p>correct answer: <span class="answer"></span></p>
+      <input type="text" id="inputField">
     </section> 
   </div>
 
   <script src="lib/jquery.js"></script>
-  <script src="lib/keypress-2.1.3.min.js"></script>
+  <script src="lib/keypress.js"></script>
   <script src="shortcuts.js"></script>
 
   <script>
 
     document.getElementById('inputField').focus();
 
-    var listener = new window.keypress.Listener();
     var counter = 0;
+    var delay = 3000;
+
+
+    var inputField = document.getElementById("inputField");
+    var listenerDefaults = {
+        is_unordered: true,
+        prevent_repeat: true,
+        is_solitary: true  
+    };
+    var listener = new window.keypress.Listener(inputField, listenerDefaults);
+
 
     var score = 0;
     var incrementScore = function() {
@@ -72,10 +80,16 @@
 
     var detectKeys = function() {
       $('.command').text(shortcuts[counter].command);
-      $('.answer').text(shortcuts[counter].correct);
+      var revealShortcut = setTimeout(function() {
+        $('#inputField').attr('placeholder', shortcuts[counter].correct);
+      }, delay);
+
       listener.simple_combo(shortcuts[counter].keys, function() {
+        $('#inputField').attr('placeholder', '');
+        clearTimeout(revealShortcut);
         counter++;
         incrementScore();
+        listener.reset();
         detectKeys();
       });
     };
