@@ -25,6 +25,31 @@ var shortcuts = [
     command: 'use selection for find',
     correct: '⌘E',
     keys: 'meta e' 
+  },
+  {
+    command: 'select word',
+    correct: '⌘D',
+    keys: "meta d" 
+  },
+  {
+    command: 'goto matching parentheses',
+    correct: '⌃M',
+    keys: 'ctrl m' 
+  },
+  {
+    command: 'find next',
+    correct: '⌘G',
+    keys: "meta g" 
+  },
+  {
+    command: 'comment current line',
+    correct: '⌘/',
+    keys: 'meta /' 
+  },
+  {
+    command: 'indent current line(s)',
+    correct: '⌘]',
+    keys: 'meta ]' 
   }
   
 ];
