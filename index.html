@@ -13,11 +13,11 @@
       <h2>Learn and practice Sublime Text keyboard shortcuts</h2>
       <div class="select">
         <span class="arrow"></span>
-        <select>
-          <option class="label" value="options">hint options</option> 
-          <option value="delay0">no delay</option> 
-          <option value="delay2">2 seconds</option>
-          <option value="delay5">5 seconds</option>
+        <select class="hints">
+          <option class="label" value="3000">hint options</option> 
+          <option value="0">no delay</option> 
+          <option value="2000">2 seconds</option>
+          <option value="5000">5 seconds</option>
         </select>
       </div>
       <button>start</button>
@@ -36,7 +36,10 @@
   <script>
 
     var counter = 0;
-    var delay = 3000;
+    var delay = $('.hints option:selected').val();
+    console.log(delay);
+
+
 
     var inputField = document.getElementById("inputField");
     var listenerDefaults = {
@@ -63,16 +66,23 @@
       }, delay);
 
       listener.simple_combo(shortcuts[counter].keys, function() {
-        $('#inputField').attr('placeholder', '');
-        clearTimeout(revealShortcut);
-        counter++;
-        incrementScore();
-        listener.reset();
-        detectKeys();
+        var revealShortcut = setTimeout(function() {
+          $('#inputField').attr('placeholder', shortcuts[counter].correct);
+        }, 0);
+        setTimeout(function() {
+          clearTimeout(revealShortcut);
+          $('#inputField').attr('placeholder', '');
+          counter++;
+          incrementScore();
+          listener.reset();
+          detectKeys();
+        }, 300);
       });
     };
     console.log(shortcuts.length);
     $('button').on('click', function() {
+      delay = $('.hints option:selected').val();
+      console.log(delay);
       document.getElementById('inputField').focus();
       detectKeys();
     });
