@@ -4,19 +4,30 @@
   <meta charset="UTF-8">
   <title>Keystoked</title>
   <link href='css/main.css' rel='stylesheet'>
+  <link href='css/select.css' rel='stylesheet'>
 </head>
 <body>
   <div class="container">
     <img src="images/keystoked-logo.png" alt="Surfer">
     <section class="content">
-      <h2>practice sublime keyboard shortcuts</h2>
-      <h3>Score: <span class="score"></span></h3>
+      <h2>Learn and practice Sublime Text keyboard shortcuts</h2>
+      <div class="select">
+        <span class="arrow"></span>
+        <select>
+          <option class="label" value="options">hint options</option> 
+          <option value="delay0">no delay</option> 
+          <option value="delay2">2 seconds</option>
+          <option value="delay5">5 seconds</option>
+        </select>
+      </div>
       <button>start</button>
+      <h3>Score: <span class="score">0</span></h3>
       <p>Type keyboard shortcut for: </p>
       <h3 class="command"></h3>
-      <input type="text" id="inputField">
+      <input type="text" id="inputField"> 
     </section> 
   </div>
+
 
   <script src="lib/jquery.js"></script>
   <script src="lib/keypress.js"></script>
@@ -24,11 +35,8 @@
 
   <script>
 
-    
-
     var counter = 0;
     var delay = 3000;
-
 
     var inputField = document.getElementById("inputField");
     var listenerDefaults = {
