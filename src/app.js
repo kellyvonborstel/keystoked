@@ -1,9 +1,10 @@
 
 // TODO:
 // rebuild using angular
-// prevent chrome shortcuts being
-// order shortcuts randomly
+// prevent chrome shortcuts
+// add more apps
 // add more shortcuts
+// order shortcuts randomly
 // deploy
 
 // to keep track of current shortcut object
