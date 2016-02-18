@@ -8,86 +8,40 @@
 </head>
 <body>
   <div class="container">
-    <img src="images/keystoked-logo.png" alt="Surfer">
+    <img src="images/keystoked-logo.png" alt="Keystoked">
     <section class="content">
-      <h2>Learn and practice Sublime Text keyboard shortcuts</h2>
+      <h2>Learn and practice keyboard shortcuts</h2>
+      <div class="select">
+        <span class="arrow"></span>
+        <select class="apps">
+          <option value="default">choose app</option> 
+          <option value="sublime">sublime</option> 
+          <option value="atom">atom</option>
+        </select>
+      </div>
       <div class="select">
         <span class="arrow"></span>
         <select class="hints">
-          <option class="label" value="3000">hint options</option> 
+          <option value="default">hint options</option> 
           <option value="0">no delay</option> 
-          <option value="2000">2 seconds</option>
           <option value="5000">5 seconds</option>
+          <option value="100000">no hint</option>
         </select>
       </div>
       <button>start</button>
-      <h3>Score: <span class="score">0</span></h3>
-      <p>Type keyboard shortcut for: </p>
-      <h3 class="command"></h3>
-      <input type="text" id="inputField"> 
-    </section> 
+      <div class="shortcut">
+        <h3 class="command">Type shortcut for command</h3>
+        <input type="text" class="inputField"> 
+      </div>
+    </section>
+    <p class="legend">⇧ Shift &nbsp;  &nbsp; ⌘ Command &nbsp;  &nbsp; ⌃ Control &nbsp;  &nbsp; ⌥ Option</p>
   </div>
-
 
   <script src="lib/jquery.js"></script>
   <script src="lib/keypress.js"></script>
-  <script src="shortcuts.js"></script>
-
-  <script>
-
-    var counter = 0;
-    var delay = $('.hints option:selected').val();
-    console.log(delay);
-
-
-
-    var inputField = document.getElementById("inputField");
-    var listenerDefaults = {
-        is_unordered: true,
-        prevent_repeat: true,
-        is_solitary: true  
-    };
-    var listener = new window.keypress.Listener(inputField, listenerDefaults);
-
-    $('#inputField').keypress(function() {
-      return false;
-    });
-
-    var score = 0;
-    var incrementScore = function() {
-      score++;
-      $('.score').text(score);
-    };
-
-    var detectKeys = function() {
-      $('.command').text(shortcuts[counter].command);
-      var revealShortcut = setTimeout(function() {
-        $('#inputField').attr('placeholder', shortcuts[counter].correct);
-      }, delay);
-
-      listener.simple_combo(shortcuts[counter].keys, function() {
-        var revealShortcut = setTimeout(function() {
-          $('#inputField').attr('placeholder', shortcuts[counter].correct);
-        }, 0);
-        setTimeout(function() {
-          clearTimeout(revealShortcut);
-          $('#inputField').attr('placeholder', '');
-          counter++;
-          incrementScore();
-          listener.reset();
-          detectKeys();
-        }, 300);
-      });
-    };
-    console.log(shortcuts.length);
-    $('button').on('click', function() {
-      delay = $('.hints option:selected').val();
-      console.log(delay);
-      document.getElementById('inputField').focus();
-      detectKeys();
-    });
-
-  </script>
+  <script src="src/sublime.js"></script>
+  <script src="src/atom.js"></script>
+  <script src="src/app.js"></script>
   
 </body>
 </html>

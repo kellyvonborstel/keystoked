@@ -1,57 +1,54 @@
 
+/* http://www.lugolabs.com/articles/72-style-select-html-element-with-css */
+
 .select {
-  font-size: 16px;
+  font-size: 10px;
   position: relative;
   display: inline-block;
-  margin-right: 50px;
+  margin-right: 10px;
+  margin-bottom: 20px;
 }
-
 .select select {
   outline: none;
   -webkit-appearance: none;
   display: block;
-  padding: .5em 2.8em .6em .7em;
+  padding: .6em 2.8em .65em .7em;
   margin: 0;
-
   transition: border-color 0.2s;
-  border: 3px solid #5bd4b7;
+  border: 2px solid #e02a86;
   border-radius: 5px;
-
   background: #fff;
   color: #555;
   line-height: normal;
   font-family: inherit;
-  font-size: 20px;
+  font-size: 16px;
   line-height: inherit;
 }
-
 .select .arrow {
   background: #fff;
   bottom: 5px;
   position: absolute;
   right: 5px;
   top: 5px;
-  width: 50px;
+  width: 20px;
   pointer-events: none;
 }
-
 .select .arrow:before {
   content: '';
   position: absolute;
   top: 50%;
-  right: 24px;
+  right: 12px;
   margin-top: -5px;
   pointer-events: none;
-  border-top: 10px solid #41bc9f;
+  border-top: 10px solid #a82567;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
 }
-
 .select .arrow:after {
   content: '';
   position: absolute;
   top: 50%;
-  right: 28px;
+  right: 16px;
   margin-top: -5px;
   pointer-events: none;
   border-top: 6px solid #fff;
