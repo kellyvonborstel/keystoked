@@ -28,8 +28,22 @@ var listener = new window.keypress.Listener(inputField, listenerDefaults);
 $('.inputField').keypress(function() {
   return false;
 });
-
 $('button').on('click', function() {
+  // prevent default browser events related to keyboard shortcuts
+  $(window).keydown(function(event) {
+    if(event.metaKey && event.keyCode == 84) { 
+      console.log("Hey! Command+T event captured!");
+      event.preventDefault(); 
+    }
+    if(event.metaKey && event.keyCode == 83) { 
+      console.log("Hey! Command+S event captured!");
+      event.preventDefault(); 
+    }
+    if(event.metaKey && event.altKey && event.keyCode == 66) { 
+      console.log("Hey! Command+Option+B event captured!");
+      event.preventDefault(); 
+    }
+  });
   startApp();
 });
 
@@ -64,7 +78,6 @@ var practiceShortcuts = function() {
     // show answer as placeholder after chosen delay period
     $('.inputField').attr('placeholder', currentApp[counter].correct);
   }, hintDelay);
-
   // listen for user to type correct shortcut
   listener.simple_combo(currentApp[counter].keys, function() {
     // show correct answer when user types it
