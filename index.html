@@ -11,22 +11,34 @@
   <div class="container">
     <img src="images/keystoked-logo.png" alt="Keystoked">
     <section class="content">
-      <h2>Learn and practice keyboard shortcuts</h2>
+      <h2>Learn and Practice Mac Keyboard Shortcuts</h2>
       <div class="select">
         <span class="arrow"></span>
         <select class="apps">
-          <option value="default">choose app</option> 
+          <option value="sublime">choose app</option> 
           <option value="sublime">sublime</option> 
           <option value="atom">atom</option>
         </select>
       </div>
       <div class="select">
         <span class="arrow"></span>
+        <select class="number">
+          <option value="49">practice sets</option> 
+          <option value="5">set one</option> 
+          <option value="10">set two</option> 
+          <option value="20">set three</option>
+          <option value="30">set four</option> 
+          <option value="40">set five</option> 
+          <option value="49">all shortcuts</option>
+        </select>
+      </div>
+      <div class="select">
+        <span class="arrow"></span>
         <select class="hints">
-          <option value="default">hint options</option> 
+          <option value="5000">hint options</option> 
           <option value="0">no delay</option> 
           <option value="5000">5 seconds</option>
-          <option value="100000">no hint</option>
+          <option value="10000">10 seconds</option>
         </select>
       </div>
       <button>start</button>
@@ -52,6 +64,7 @@
   <script src="lib/keypress.js"></script>
   <script src="src/sublime.js"></script>
   <script src="src/atom.js"></script>
+  <script src="src/prevent-default.js"></script>  
   <script src="src/app.js"></script>  
 </body>
 </html>

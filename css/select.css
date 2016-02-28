@@ -5,14 +5,14 @@
   font-size: 10px;
   position: relative;
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 7px;
   margin-bottom: 20px;
 }
 .select select {
   outline: none;
   -webkit-appearance: none;
   display: block;
-  padding: .6em 2.8em .65em .7em;
+  padding: .6em 2.6em .65em .7em;
   margin: 0;
   transition: border-color 0.2s;
   border: 2px solid #e02a86;
@@ -21,7 +21,7 @@
   color: #555;
   line-height: normal;
   font-family: inherit;
-  font-size: 16px;
+  font-size: 14px;
   line-height: inherit;
 }
 .select .arrow {
@@ -37,7 +37,7 @@
   content: '';
   position: absolute;
   top: 50%;
-  right: 12px;
+  right: 8px;
   margin-top: -5px;
   pointer-events: none;
   border-top: 10px solid #a82567;
@@ -48,7 +48,7 @@
   content: '';
   position: absolute;
   top: 50%;
-  right: 16px;
+  right: 12px;
   margin-top: -5px;
   pointer-events: none;
   border-top: 6px solid #fff;
