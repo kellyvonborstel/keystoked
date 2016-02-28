@@ -2,59 +2,14 @@
 var sublimeShortcuts = [
 
   {
-    command: 'Repeat last keyboard shortcut command',
-    correct: '⌘ + Y',
-    keys: 'meta y' 
-  },
-  {
-    command: 'Block comment current selection',
-    correct: '⌘ + ⌥ + /',
-    keys: 'meta option /' 
-  },
-  {
-    command: 'Comment current line(s)',
-    correct: '⌘ + /',
-    keys: 'meta /' 
-  },
-  {
     command: 'Duplicate line(s)',
     correct: '⌘ + ⇧ + D',
     keys: 'meta shift d' 
   },
   {
-    command: 'Un-indent current line(s)',
-    correct: '⌘ + [',
-    keys: 'meta [' 
-  },
-  {
-    command: 'Indent current line(s)',
-    correct: '⌘ + ]',
-    keys: 'meta ]' 
-  },
-  {
     command: 'Insert line before',
     correct: '⌘ + ⇧ + ↵',
     keys: 'meta shift enter'  
-  },
-  {
-    command: 'Select contents of current parentheses',
-    correct: '⌃ + ⇧ + M',
-    keys: 'ctrl shift m' 
-  },
-  {
-    command: 'Goto matching parentheses',
-    correct: '⌃ + M',
-    keys: 'ctrl m' 
-  },
-  {
-    command: 'Select word',
-    correct: '⌘ + D',
-    keys: 'meta d' 
-  },
-  {
-    command: 'Select line',
-    correct: '⌘ + L',
-    keys: 'meta l' 
   },
   {
     command: 'Insert line after',
@@ -72,24 +27,19 @@ var sublimeShortcuts = [
     keys: 'meta option v' 
   },
   {
+    command: 'Join lines',
+    correct: '⌘ + J',
+    keys: 'meta j' 
+  },
+  {
+    command: 'Delete current line(s)',
+    correct: '⌃ + ⇧ + K',
+    keys: 'ctrl shift k' 
+  },
+  {
     command: 'Paste and indent correctly',
     correct: '⌘ + ⇧ + V',
     keys: 'meta shift v' 
-  },
-  {
-    command: 'Soft undo',
-    correct: '⌘ + U',
-    keys: 'meta u' 
-  },
-  {
-    command: 'Use selection for replace',
-    correct: '⌘ + ⇧ + E',
-    keys: 'meta shift e' 
-  },
-  {
-    command: 'Use selection for find',
-    correct: '⌘ + E',
-    keys: 'meta e' 
   },
   {
     command: 'Select current indentation',
@@ -102,6 +52,32 @@ var sublimeShortcuts = [
     keys: 'ctrl shift m' 
   },
   {
+    command: 'Select word',
+    correct: '⌘ + D',
+    keys: 'meta d' 
+  },
+  {
+    command: 'Select line',
+    correct: '⌘ + L',
+    keys: 'meta l' 
+  },
+
+  
+
+
+
+  
+  {
+    command: 'Select contents of current parentheses',
+    correct: '⌃ + ⇧ + M',
+    keys: 'ctrl shift m' 
+  },
+  {
+    command: 'Goto matching parentheses',
+    correct: '⌃ + M',
+    keys: 'ctrl m' 
+  },
+  {
     command: 'Goto line in current file',
     correct: '^ + G',
     keys: 'ctrl g' 
@@ -110,11 +86,6 @@ var sublimeShortcuts = [
     command: 'Goto symbol',
     correct: '⌘ + R',
     keys: 'meta r' 
-  },
-  {
-    command: 'Quick open files by name',
-    correct: '⌘ + P',
-    keys: 'meta p' 
   },
   {
     command: 'Quick find',
@@ -132,6 +103,16 @@ var sublimeShortcuts = [
     keys: 'meta shift g' 
   },
   {
+    command: 'Use selection for replace',
+    correct: '⌘ + ⇧ + E',
+    keys: 'meta shift e' 
+  },
+  {
+    command: 'Use selection for find',
+    correct: '⌘ + E',
+    keys: 'meta e' 
+  },
+  {
     command: 'Find next',
     correct: '⌘ + G',
     keys: 'meta g' 
@@ -146,15 +127,44 @@ var sublimeShortcuts = [
     correct: '⌘ + F',
     keys: 'meta f' 
   },
+
+
+  
+
   {
-    command: 'Toggle full screen',
-    correct: '⌘ + ^ + F',
-    keys: 'meta ctrl f' 
+    command: 'Un-indent current line(s)',
+    correct: '⌘ + [',
+    keys: 'meta [' 
   },
   {
-    command: 'Toggle console',
-    correct: '^ + `',
-    keys: 'ctrl `' 
+    command: 'Indent current line(s)',
+    correct: '⌘ + ]',
+    keys: 'meta ]' 
+  },
+  {
+    command: 'Block comment current selection',
+    correct: '⌘ + ⌥ + /',
+    keys: 'meta option /' 
+  },
+  {
+    command: 'Comment current line(s)',
+    correct: '⌘ + /',
+    keys: 'meta /' 
+  },
+  {
+    command: 'Soft undo',
+    correct: '⌘ + U',
+    keys: 'meta u' 
+  },
+  {
+    command: 'Repeat last keyboard shortcut command',
+    correct: '⌘ + Y',
+    keys: 'meta y' 
+  },
+  {
+    command: 'Quick open files by name',
+    correct: '⌘ + P',
+    keys: 'meta p' 
   },
   {
     command: 'Save all',
@@ -167,19 +177,9 @@ var sublimeShortcuts = [
     keys: 'meta shift s' 
   },
   {
-    command: 'Zoom out',
-    correct: '⌘ + -',
-    keys: 'meta -' 
-  },
-  {
     command: 'User settings',
     correct: '⌘ + ,',
     keys: 'meta ,' 
-  },
-  {
-    command: 'Zoom in',
-    correct: '⌘ + =',
-    keys: 'meta =' 
   },
   {
     command: 'Open file',
@@ -191,6 +191,25 @@ var sublimeShortcuts = [
     correct: '⌘ + ⇧ + P',
     keys: 'meta shift p' 
   },
+
+
+
+  
+  {
+    command: 'Toggle full screen',
+    correct: '⌘ + ^ + F',
+    keys: 'meta ctrl f' 
+  },
+  {
+    command: 'Zoom out',
+    correct: '⌘ + -',
+    keys: 'meta -' 
+  },
+  {
+    command: 'Zoom in',
+    correct: '⌘ + =',
+    keys: 'meta =' 
+  },
   {
     command: 'Hide all other windows',
     correct: '⌘ + ⌥ + H',
@@ -200,16 +219,6 @@ var sublimeShortcuts = [
     command: 'Hide sublime text',
     correct: '⌘ + H',
     keys: 'meta h' 
-  },
-  {
-    command: 'Join lines',
-    correct: '⌘ + J',
-    keys: 'meta j' 
-  },
-  {
-    command: 'Delete current line(s)',
-    correct: '⌃ + ⇧ + K',
-    keys: 'ctrl shift k' 
   },
   {
     command: 'Split view into two columns',
