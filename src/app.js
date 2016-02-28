@@ -1,7 +1,7 @@
 
 // TODO:
 // rebuild using angular
-// prevent chrome shortcuts
+// prevent chrome shortcuts -- in progress
 // add more apps
 // add more shortcuts
 // order shortcuts randomly
@@ -31,18 +31,92 @@ $('.inputField').keypress(function() {
 $('button').on('click', function() {
   // prevent default browser events related to keyboard shortcuts
   $(window).keydown(function(event) {
-    if(event.metaKey && event.keyCode == 84) { 
-      console.log("Hey! Command+T event captured!");
+    // prevent default behavior for Command + R
+
+    // UNCOMMENT THIS WHEN READY TO DEPLOY
+
+    // if (event.metaKey && event.keyCode == 82) { 
+    //   console.log("event captured");
+    //   event.preventDefault(); 
+    // }
+    // prevent default behavior for Command + S
+    if (event.metaKey && event.keyCode == 83) { 
+      console.log("event captured");
       event.preventDefault(); 
     }
-    if(event.metaKey && event.keyCode == 83) { 
-      console.log("Hey! Command+S event captured!");
+    // prevent default behavior for Command + O
+    if (event.metaKey && event.keyCode == 79) { 
+      console.log("event captured");
       event.preventDefault(); 
     }
-    if(event.metaKey && event.altKey && event.keyCode == 66) { 
-      console.log("Hey! Command+Option+B event captured!");
+    // prevent default behavior for Command + L
+    if (event.metaKey && event.keyCode == 76) { 
+      console.log("event captured");
       event.preventDefault(); 
     }
+    // prevent default behavior for Command + P
+    if (event.metaKey && event.keyCode == 80) { 
+      console.log("event captured");
+      event.preventDefault(); 
+    }
+    // prevent default behavior for Command + Option + B
+    if (event.metaKey && event.altKey && event.keyCode == 66) { 
+      console.log("event captured");
+      event.preventDefault(); 
+    }
+    // prevent default behavior for Command + [
+    if (event.metaKey && event.keyCode == 219) { 
+      console.log("event captured");
+      event.preventDefault(); 
+    }
+    // prevent default behavior for Command + ]
+    if (event.metaKey && event.keyCode == 221) { 
+      console.log("event captured");
+      event.preventDefault(); 
+    }
+    // prevent default behavior for Command + Control + F
+    if (event.metaKey && event.ctrlKey && event.keyCode == 70) { 
+      console.log("event captured");
+      event.preventDefault(); 
+    }
+    // prevent default behavior for Command + F
+    if (event.metaKey && event.keyCode == 70) { 
+      console.log("event captured");
+      event.preventDefault(); 
+    }
+    // prevent default behavior for Command + -
+    if (event.metaKey && event.keyCode == 189) { 
+      console.log("event captured");
+      event.preventDefault(); 
+    }
+    // prevent default behavior for Command + =
+    if (event.metaKey && event.keyCode == 187) { 
+      console.log("event captured");
+      event.preventDefault(); 
+    }
+    // prevent default behavior for Command + ,
+    if (event.metaKey && event.keyCode == 188) { 
+      console.log("event captured");
+      event.preventDefault(); 
+    }
+    // prevent default behavior for Command + Option + H
+    if (event.metaKey && event.altKey && event.keyCode == 72) { 
+      console.log("event captured");
+      event.preventDefault(); 
+    }
+    // prevent default behavior for Command + H
+    if (event.metaKey && event.keyCode == 72) { 
+      console.log("event captured");
+      event.preventDefault(); 
+    }
+    // prevent default behavior for Command + Control + DOWN
+    // if (event.metaKey && event.ctrlKey && event.keyCode == 40) { 
+    //   console.log("event captured");
+    //   event.preventDefault();
+    //   event.stopPropagation();
+    //   $(this).volume = 0.0;
+
+    // }
   });
   startApp();
 });
