@@ -30,6 +30,21 @@ var listener = new window.keypress.Listener(inputField, listenerDefaults);
 $('.inputField').keypress(function() {
   return false;
 });
+
+// shuffle array of shortcuts
+var shuffle = function(array) {
+  var copy = array.slice();
+  var shuffled = [];
+  while (shuffled.length < array.length) {
+    var rand = Math.floor(Math.random() * copy.length);
+    shuffled.push(copy[rand]);
+    copy.splice(rand, 1);
+  }
+  return shuffled;
+}
+
+
+// start button
 $('button').on('click', function() {
   // prevent default browser events related to keyboard shortcuts
   $(window).keydown(function(event) {
