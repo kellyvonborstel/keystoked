@@ -14,6 +14,8 @@ var currentApp;
 var defaultApp = sublimeShortcuts;
 // select menu -- choose hint to have no delay, 5 seconds, or no hint
 var hintDelay;
+// there are four sets to choose from, or user can practice all sets
+var practiceSet;
 
 // set up listener
 var inputField = $('.inputField');
