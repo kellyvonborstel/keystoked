@@ -82,7 +82,7 @@ var chooseSet = function() {
   } else if (setChoice === 'set4') {
     currentSet = shuffle(currentApp.set4);
   } else {
-    currentSet = shuffle(currentApp[0].concat(currentApp[1], currentApp[2], currentApp[3]));
+    currentSet = shuffle(currentApp.set1.concat(currentApp.set2, currentApp.set3, currentApp.set4));
   }
 };
 

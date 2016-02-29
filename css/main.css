@@ -83,3 +83,22 @@ input {
   padding: 13px 20px;
   border-radius: 5px;
 }
+
+.copyright {
+  margin-top: -55px;
+  font-size: .8em;
+  color: #4f9fc5;
+}
+
+.copyright a:link, .copyright a:visited {
+  color: #4f9fc5;
+}
+
+.copyright a:hover, .copyright a:active {
+  color: #115e83;
+}
+
+.linkedin {
+  margin-left: 8px;
+  margin-bottom: -3px;
+}
