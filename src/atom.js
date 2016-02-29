@@ -22,6 +22,11 @@ var atomShortcuts = {
       keys: 'meta option }' 
     },
     {
+      command: 'Fold selected text',
+      correct: '⌘ + ⌥ + ⌃ + F',
+      keys: 'meta option ctrl f' 
+    },
+    {
       command: 'Move to beginning of word',
       correct: '⌥ + B',
       keys: 'option b' 
@@ -55,11 +60,6 @@ var atomShortcuts = {
       command: 'Goto matching bracket',
       correct: '⌃ + M',
       keys: 'ctrl m' 
-    },
-    {
-      command: 'Goto line',
-      correct: '^ + G',
-      keys: 'ctrl g' 
     }
   ],
 
@@ -95,7 +95,7 @@ var atomShortcuts = {
       keys: 'meta d' 
     },
     {
-      command: 'Select line`',
+      command: 'Select line',
       correct: '⌘ + L',
       keys: 'meta l' 
     },
@@ -173,24 +173,29 @@ var atomShortcuts = {
       keys: 'meta option f' 
     },
     {
-      command: 'Search for symbol in file',
-      correct: '⌘ + R',
-      keys: 'meta r' 
-    },
-    {
-      command: 'Search for symbol across project',
-      correct: '⌘ + ⇧ + R',
-      keys: 'meta shift r' 
-    },
-    {
       command: 'Find open file',
       correct: '⌘ + B',
       keys: 'meta b' 
+    },
+    {
+      command: 'Select to same position, previous line',
+      correct: '⌥ + ⇧ + P',
+      keys: 'shift option p' 
+    },
+    {
+      command: 'Select to same position, next line',
+      correct: '⌥ + ⇧ + N',
+      keys: 'shift option n' 
     }
   ],
 
 
   set4: [
+    {
+      command: 'Goto line',
+      correct: '^ + G',
+      keys: 'ctrl g' 
+    },
     {
       command: 'Open command palette',
       correct: '⌘ + ⇧ + P',
@@ -227,14 +232,14 @@ var atomShortcuts = {
       keys: 'meta h' 
     },
     {
-      command: 'Add a file',
-      correct: 'A',
-      keys: 'a' 
+      command: 'Search for symbol in file',
+      correct: '⌘ + R',
+      keys: 'meta r' 
     },
     {
-      command: 'Move a file',
-      correct: 'M',
-      keys: 'm' 
+      command: 'Search for symbol across project',
+      correct: '⌘ + ⇧ + R',
+      keys: 'meta shift r' 
     },
     {
       command: 'Decrease font size',
