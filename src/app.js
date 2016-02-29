@@ -1,8 +1,6 @@
 
 // TODO:
 // rebuild using angular
-// prevent chrome shortcuts -- in progress
-// add more apps
 // add more shortcuts
 // order shortcuts randomly
 // deploy
@@ -11,11 +9,11 @@
 var counter = 0;
 // select menu -- choose which app shortcuts to practice
 var currentApp;
-var defaultApp = sublimeShortcuts;
+// var defaultApp = sublimeShortcuts;
 // select menu -- choose hint to have no delay, 5 seconds, or no hint
 var hintDelay;
 // there are four sets to choose from, or user can practice all sets
-var practiceSet;
+var currentSet;
 
 // set up listener
 var inputField = $('.inputField');
@@ -58,7 +56,7 @@ var clearFields = function() {
   $('.command').text('Type shortcut for command');
 };
 
-// determine which app's shortcuts objects to use
+// determine which app's shortcuts to use
 var chooseApp = function() {
   var appChoice = $('.apps option:selected').val();
   clearFields();
@@ -71,23 +69,40 @@ var chooseApp = function() {
   }
 };
 
+// determine which set of shortcuts to practice
+var chooseSet = function() {
+  var setChoice = $('.sets option:selected').val();
+  clearFields();
+  if (setChoice === 'set1') {
+    currentSet = shuffle(currentApp.set1);
+  } else if (setChoice === 'set2') {
+    currentSet = shuffle(currentApp.set2);
+  } else if (setChoice === 'set3') {
+    currentSet = shuffle(currentApp.set3);
+  } else if (setChoice === 'set4') {
+    currentSet = shuffle(currentApp.set4);
+  } else {
+    currentSet = shuffle(currentApp[0].concat(currentApp[1], currentApp[2], currentApp[3]));
+  }
+};
+
 var practiceShortcuts = function() {
   // TODO: change counter to random number
-  if (counter >= currentApp.length) {
+  if (counter >= currentSet.length) {
     counter = 0;
   }
   // show command
-  $('.command').text(currentApp[counter].command);
+  $('.command').text(currentSet[counter].command);
 
   // variable for timeout id so it can be cleared later
   var revealShortcut1 = setTimeout(function() {
     // show answer as placeholder after chosen delay period
-    $('.inputField').attr('placeholder', currentApp[counter].correct);
+    $('.inputField').attr('placeholder', currentSet[counter].correct);
   }, hintDelay);
   // listen for user to type correct shortcut
-  listener.simple_combo(currentApp[counter].keys, function() {
+  listener.simple_combo(currentSet[counter].keys, function() {
     // show correct answer when user types it
-    $('.inputField').attr('placeholder', currentApp[counter].correct);
+    $('.inputField').attr('placeholder', currentSet[counter].correct);
     // slight delay after user types correct answer so it can stay displayed briefly
     setTimeout(function() {
       // if user types correct keys, prevent hint from displaying
@@ -104,6 +119,7 @@ var practiceShortcuts = function() {
 var startApp = function() {
   counter++;
   chooseApp();
+  chooseSet()
   // select menu -- choose hint to have no delay, 5 seconds, or no hint
   hintDelay = $('.hints option:selected').val();
   clearFields();

@@ -65,69 +65,6 @@ var sublimeShortcuts = {
 
   set2: [
     {
-      command: 'Select contents of current parentheses',
-      correct: '⌃ + ⇧ + M',
-      keys: 'ctrl shift m' 
-    },
-    {
-      command: 'Goto matching parentheses',
-      correct: '⌃ + M',
-      keys: 'ctrl m' 
-    },
-    {
-      command: 'Goto line in current file',
-      correct: '^ + G',
-      keys: 'ctrl g' 
-    },
-    {
-      command: 'Goto symbol',
-      correct: '⌘ + R',
-      keys: 'meta r' 
-    },
-    {
-      command: 'Quick find',
-      correct: '⌘ + ⌥ + G',
-      keys: 'meta option g' 
-    },
-    {
-      command: 'Replace next',
-      correct: '⌘ + ⌥ + E',
-      keys: 'meta option e' 
-    },
-    {
-      command: 'Find previous',
-      correct: '⌘ + ⇧ + G',
-      keys: 'meta shift g' 
-    },
-    {
-      command: 'Use selection for replace',
-      correct: '⌘ + ⇧ + E',
-      keys: 'meta shift e' 
-    },
-    {
-      command: 'Use selection for find',
-      correct: '⌘ + E',
-      keys: 'meta e' 
-    },
-    {
-      command: 'Find next',
-      correct: '⌘ + G',
-      keys: 'meta g' 
-    },
-    {
-      command: 'Find in files',
-      correct: '⌘ + ⇧ + F',
-      keys: 'meta shift f' 
-    },
-    {
-      command: 'Find',
-      correct: '⌘ + F',
-      keys: 'meta f' 
-    }
-  ],
-
-  set3: [
-    {
       command: 'Un-indent current line(s)',
       correct: '⌘ + [',
       keys: 'meta [' 
@@ -189,7 +126,71 @@ var sublimeShortcuts = {
     }
   ],
 
-  set4: [ 
+  set3: [
+    {
+      command: 'Select contents of current parentheses',
+      correct: '⌃ + ⇧ + M',
+      keys: 'ctrl shift m' 
+    },
+    {
+      command: 'Goto matching parentheses',
+      correct: '⌃ + M',
+      keys: 'ctrl m' 
+    },
+    {
+      command: 'Goto line in current file',
+      correct: '^ + G',
+      keys: 'ctrl g' 
+    },
+    {
+      command: 'Goto symbol',
+      correct: '⌘ + R',
+      keys: 'meta r' 
+    },
+    {
+      command: 'Quick find',
+      correct: '⌘ + ⌥ + G',
+      keys: 'meta option g' 
+    },
+    {
+      command: 'Replace next',
+      correct: '⌘ + ⌥ + E',
+      keys: 'meta option e' 
+    },
+    {
+      command: 'Find previous',
+      correct: '⌘ + ⇧ + G',
+      keys: 'meta shift g' 
+    },
+    {
+      command: 'Use selection for replace',
+      correct: '⌘ + ⇧ + E',
+      keys: 'meta shift e' 
+    },
+    {
+      command: 'Use selection for find',
+      correct: '⌘ + E',
+      keys: 'meta e' 
+    },
+    {
+      command: 'Find next',
+      correct: '⌘ + G',
+      keys: 'meta g' 
+    },
+    {
+      command: 'Find in files',
+      correct: '⌘ + ⇧ + F',
+      keys: 'meta shift f' 
+    },
+    {
+      command: 'Find',
+      correct: '⌘ + F',
+      keys: 'meta f' 
+    }
+  ],
+
+
+  set4: [
     {
       command: 'Toggle full screen',
       correct: '⌘ + ^ + F',
@@ -249,23 +250,7 @@ var sublimeShortcuts = {
       command: 'Jump to column or group 2',
       correct: '^ + 2',
       keys: 'ctrl 2' 
-    }   
+    }
   ]
 
 };
-
-
-
-
-
-
-
-  
-
-
-  
-
-
-
-
-  
