@@ -65,7 +65,7 @@ var sublimeShortcuts = {
 
   set2: [
     {
-      command: 'Un-indent current line(s)',
+      command: 'Outdent current line(s)',
       correct: '⌘ + [',
       keys: 'meta [' 
     },
