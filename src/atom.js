@@ -17,11 +17,6 @@ var atomShortcuts = {
       keys: 'meta option ]' 
     },
     {
-      command: 'Unfold all code',
-      correct: '⌘ + ⌥ + }',
-      keys: 'meta option }' 
-    },
-    {
       command: 'Fold selected text',
       correct: '⌘ + ⌥ + ⌃ + F',
       keys: 'meta option ctrl f' 

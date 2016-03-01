@@ -37,7 +37,6 @@ var shuffle = function(array) {
   return shuffled;
 }
 
-
 // start button
 $('button').on('click', function() {
   // prevent default browser events related to keyboard shortcuts
@@ -103,12 +102,12 @@ var practiceShortcuts = function() {
   // show command
   $('.command').text(currentSet[counter].command);
 
-
   // variable for timeout id so it can be cleared later
   var revealShortcut1 = setTimeout(function() {
     // show answer as placeholder after chosen delay period
     $('.inputField').attr('placeholder', currentSet[counter].correct);
   }, hintDelay);
+
   $('.apps').change(function() {
     clearFields();
     clearTimeout(revealShortcut1);
@@ -123,6 +122,7 @@ var practiceShortcuts = function() {
     clearFields();
     clearTimeout(revealShortcut1);
   });
+  
   // listen for user to type correct shortcut
   listener.simple_combo(currentSet[counter].keys, function() {
     // show correct answer when user types it
