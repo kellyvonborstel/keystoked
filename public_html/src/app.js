@@ -10,7 +10,6 @@ var hintDelay;
 // there are four sets to choose from, or user can practice all sets
 var practiceSet;
 
-
 // set up listener
 var inputField = $('.inputField');
 var listenerDefaults = {
@@ -107,7 +106,6 @@ var practiceShortcuts = function() {
     // show answer as placeholder after chosen delay period
     $('.inputField').attr('placeholder', currentSet[counter].correct);
   }, hintDelay);
-
   $('.apps').change(function() {
     clearFields();
     clearTimeout(revealShortcut1);
@@ -122,7 +120,6 @@ var practiceShortcuts = function() {
     clearFields();
     clearTimeout(revealShortcut1);
   });
-  
   // listen for user to type correct shortcut
   listener.simple_combo(currentSet[counter].keys, function() {
     // show correct answer when user types it

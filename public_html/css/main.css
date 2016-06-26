@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: 'AlteHaasGroteskRegular';
   src: 
@@ -76,8 +75,8 @@ input {
   margin-bottom: 25px;
 }
 .legend {
-  font-size: .85em;
-  width: 70%;
+  font-size: .75em;
+  width: 62%;
   margin: 30px auto -30px;
   background-color: #ddd;
   padding: 13px 20px;
@@ -88,11 +87,14 @@ input {
   font-size: .8em;
   color: #4f9fc5;
 }
+.year {
+  letter-spacing: -.07em;
+}
 .copyright a:link, .copyright a:visited {
   color: #4f9fc5;
 }
 .copyright a:hover, .copyright a:active {
-  color: #115e83;
+  color: #3689af;
 }
 .linkedin {
   margin-left: 8px;

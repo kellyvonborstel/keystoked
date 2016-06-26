@@ -1,5 +1,6 @@
 
 var atomShortcuts = {
+
   set1: [
     {
       command: 'Join lines',
@@ -171,19 +172,8 @@ var atomShortcuts = {
       command: 'Find open file',
       correct: '⌘ + B',
       keys: 'meta b' 
-    },
-    {
-      command: 'Select to same position, previous line',
-      correct: '⌥ + ⇧ + P',
-      keys: 'shift option p' 
-    },
-    {
-      command: 'Select to same position, next line',
-      correct: '⌥ + ⇧ + N',
-      keys: 'shift option n' 
     }
   ],
-
 
   set4: [
     {
@@ -210,11 +200,6 @@ var atomShortcuts = {
       command: 'Toggle line comments',
       correct: '⌘ + /',
       keys: 'meta /' 
-    },
-    {
-      command: 'Open tree view',
-      correct: '⌃ + O',
-      keys: 'ctrl o' 
     },
     {
       command: 'Hide other applications',

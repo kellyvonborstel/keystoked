@@ -1,5 +1,6 @@
 
 var sublimeShortcuts = {
+  
   set1: [
     {
       command: 'Duplicate line(s)',
@@ -161,11 +162,6 @@ var sublimeShortcuts = {
       command: 'Find previous',
       correct: '⌘ + ⇧ + G',
       keys: 'meta shift g' 
-    },
-    {
-      command: 'Use selection for replace',
-      correct: '⌘ + ⇧ + E',
-      keys: 'meta shift e' 
     },
     {
       command: 'Use selection for find',
