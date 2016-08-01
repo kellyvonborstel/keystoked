@@ -1,14 +1,12 @@
 
-// to keep track of current shortcut object
+// keep track of current shortcut object
 var counter = 0;
-// select menu -- choose which app shortcuts to practice
+// select menu - choose which app shortcuts to practice
 var currentApp;
-// select menu -- choose from 4 sets of shortcuts or choose all shortcuts
+// select menu - choose from 4 sets of shortcuts or choose all shortcuts
 var currentSet;
-// select menu -- choose hint to have no delay, 5 seconds, or 10 seconds
+// select menu - choose hint to have no delay, 5 seconds, or 10 seconds
 var hintDelay;
-// there are four sets to choose from, or user can practice all sets
-var practiceSet;
 
 // set up listener
 var inputField = $('.inputField');
@@ -19,7 +17,7 @@ var listenerDefaults = {
 };
 var listener = new window.keypress.Listener(inputField, listenerDefaults);
 
-// to prevent any keyed input from displaying inside input field
+// prevent any keyed input from displaying inside input field
 $('.inputField').keypress(function() {
   return false;
 });
@@ -124,7 +122,7 @@ var practiceShortcuts = function() {
   listener.simple_combo(currentSet[counter].keys, function() {
     // show correct answer when user types it
     $('.inputField').attr('placeholder', currentSet[counter].correct);
-    // slight delay after user types correct answer so it can stay displayed briefly
+    // slight delay after user types correct answer so answer doesn't disappear immediately
     setTimeout(function() {
       // if user types correct keys, prevent hint from displaying
       clearTimeout(revealShortcut1);
