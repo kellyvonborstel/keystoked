@@ -34,7 +34,7 @@ var shuffle = function(array) {
     copy.splice(rand, 1);
   }
   return shuffled;
-}
+};
 
 // start button
 $('button').on('click', function() {
