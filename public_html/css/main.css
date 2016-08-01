@@ -9,11 +9,7 @@
 
 @font-face {
   font-family: 'AlteHaasGroteskBold';
-  src: 
-  local('Alte Haas Grotesk Bold'),
-  local('Alte-Haas-Grotesk-Bold'),
-  url('../fonts/AlteHaasGroteskBold.ttf') 
-  format('truetype');
+  src: url('../fonts/AlteHaasGroteskBold.ttf');
   font-weight: bold;
 }
 
@@ -28,7 +24,7 @@ body {
 
 .container {
   margin: 40px auto 70px;
-  padding: 65px;
+  padding: 10px 65px 0;
   width: 80%;
   background-color: #ffffff;
   border-radius: 20px;
@@ -36,19 +32,18 @@ body {
   border: 1px solid #ccc;
 }
 
-img {
-  margin: -40px auto 30px;
-  display: inherit;
+h1 {
+  font-family: 'AlteHaasGroteskBold';
+  font-size: 2.8em;
+  margin: 0;
 }
 
 h2 {
-  letter-spacing: .015em;
-  margin-bottom: 25px;
-  background-color: #a2ead9;
-  padding: 15px;
-  color: #62bba6;
-  border-radius: 5px;
-  font-size: 1.45em;
+  font-family: 'AlteHaasGroteskBold';
+  margin-top: 5px;
+  margin-bottom: 40px;
+  color: #168B70;
+  font-size: 1.2em;
 }
 
 button {
@@ -68,7 +63,6 @@ button {
   border: 1px solid #999;
   border-radius: 20px;
   padding: 15px;
-  margin: 20px auto 0;
 }
 
 .command {
@@ -87,7 +81,7 @@ input {
 .legend {
   font-size: .75em;
   width: 62%;
-  margin: 30px auto -35px;
+  margin: 30px auto;
   background-color: #ddd;
   padding: 13px 20px;
   border-radius: 5px;
