@@ -14,16 +14,17 @@
 }
 
 body {
-  background-color: #8cd3ef;
   font-family: 'Lucida Grande', Verdana, sans-serif;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
-  background-image: url('../images/background.png');
+  background-color: #89d2f0;
+  background-image: url('../images/background-sm.png');
+  background-repeat: repeat-x;
 }
 
 .container {
-  margin: 40px auto 70px;
+  margin: 30px auto 70px;
   padding: 10px 65px 0;
   width: 80%;
   background-color: #ffffff;
