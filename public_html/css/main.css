@@ -6,6 +6,7 @@
   url('../fonts/AlteHaasGroteskRegular.ttf') 
   format('truetype');
 }
+
 @font-face {
   font-family: 'AlteHaasGroteskBold';
   src: 
@@ -15,6 +16,7 @@
   format('truetype');
   font-weight: bold;
 }
+
 body {
   background-color: #8cd3ef;
   font-family: 'Lucida Grande', Verdana, sans-serif;
@@ -23,8 +25,9 @@ body {
   text-align: center;
   background-image: url('../images/background.png');
 }
+
 .container {
-  margin: 70px auto;
+  margin: 40px auto 70px;
   padding: 65px;
   width: 80%;
   background-color: #ffffff;
@@ -32,19 +35,22 @@ body {
   max-width: 600px;
   border: 1px solid #ccc;
 }
+
 img {
   margin: -40px auto 30px;
   display: inherit;
 }
+
 h2 {
   letter-spacing: .015em;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   background-color: #a2ead9;
   padding: 15px;
   color: #62bba6;
   border-radius: 5px;
   font-size: 1.45em;
 }
+
 button {
   font-family: 'Lucida Grande', Verdana, sans-serif;
   letter-spacing: .03em;
@@ -57,16 +63,19 @@ button {
   border: 4px solid #e02a86;
   border-top: 0 solid #e02a86;
 }
+
 .shortcut {
   border: 1px solid #999;
   border-radius: 20px;
   padding: 15px;
-  margin: 30px auto 0;
+  margin: 20px auto 0;
 }
+
 .command {
   font-size: 1.3em;
   margin-bottom: 30px;
 }
+
 input {
   padding: 5px;
   font-size: 1.3em;
@@ -74,29 +83,96 @@ input {
   width: 160px;
   margin-bottom: 25px;
 }
+
 .legend {
   font-size: .75em;
   width: 62%;
-  margin: 30px auto -30px;
+  margin: 30px auto -35px;
   background-color: #ddd;
   padding: 13px 20px;
   border-radius: 5px;
 }
+
 .copyright {
   margin-top: -55px;
   font-size: .8em;
   color: #4f9fc5;
 }
+
 .year {
   letter-spacing: -.07em;
 }
+
 .copyright a:link, .copyright a:visited {
   color: #4f9fc5;
 }
+
 .copyright a:hover, .copyright a:active {
   color: #3689af;
 }
+
 .linkedin {
   margin-left: 8px;
   margin-bottom: -3px;
+}
+
+/* based on http://www.lugolabs.com/articles/72-style-select-html-element-with-css */
+
+.select {
+  font-size: 10px;
+  position: relative;
+  display: inline-block;
+  margin-right: 7px;
+  margin-bottom: 20px;
+}
+
+.select select {
+  outline: none;
+  -webkit-appearance: none;
+  display: block;
+  padding: .6em 2.6em .65em .7em;
+  margin: 0;
+  transition: border-color 0.2s;
+  border: 2px solid #e02a86;
+  border-radius: 5px;
+  background: #fff;
+  color: #555;
+  line-height: normal;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: inherit;
+}
+
+.select .arrow {
+  background: #fff;
+  bottom: 5px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 20px;
+  pointer-events: none;
+}
+
+.select .arrow:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  margin-top: -5px;
+  pointer-events: none;
+  border-top: 10px solid #a82567;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+.select .arrow:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  margin-top: -5px;
+  pointer-events: none;
+  border-top: 6px solid #fff;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
 }
