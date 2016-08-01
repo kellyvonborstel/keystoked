@@ -71,7 +71,7 @@ input {
 }
 
 .legend {
-  color: #2a5e52;
+  /*color: #2a5e52;*/
   font-size: .75em;
   width: 70%;
   margin: 30px auto;

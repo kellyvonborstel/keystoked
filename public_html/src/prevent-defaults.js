@@ -1,164 +1,133 @@
 
+// prevent default behaviors after start is pressed
 var preventDefaultBehaviors = function() {
 
   // prevent default behavior for Command + R
-  if (event.metaKey && event.keyCode === 82) { 
-    console.log('event captured');
+  if (event.keyCode === 82 && event.metaKey) { 
     event.preventDefault(); 
   }
   // prevent default behavior for Command + S
-  if (event.metaKey && event.keyCode === 83) { 
-    console.log('event captured');
+  if (event.keyCode === 83 && event.metaKey) { 
     event.preventDefault(); 
   }
   // prevent default behavior for Command + O
-  if (event.metaKey && event.keyCode === 79) { 
-    console.log('event captured');
+  if (event.keyCode === 79 && event.metaKey) { 
     event.preventDefault(); 
   }
   // prevent default behavior for Command + L
-  if (event.metaKey && event.keyCode === 76) { 
-    console.log('event captured');
+  if (event.keyCode === 76 && event.metaKey) { 
     event.preventDefault(); 
   }
   // prevent default behavior for Command + P
-  if (event.metaKey && event.keyCode === 80) { 
-    console.log('event captured');
+  if (event.keyCode === 80 && event.metaKey) { 
     event.preventDefault(); 
   }
   // prevent default behavior for Command + Option + B
-  if (event.metaKey && event.altKey && event.keyCode === 66) { 
-    console.log('event captured');
+  if (event.keyCode === 66 && event.metaKey && event.altKey) { 
     event.preventDefault(); 
   }
   // prevent default behavior for Command + [
-  if (event.metaKey && event.keyCode === 219) { 
-    console.log('event captured');
+  if (event.keyCode === 219 && event.metaKey) { 
     event.preventDefault(); 
   }
   // prevent default behavior for Command + ]
-  if (event.metaKey && event.keyCode === 221) { 
-    console.log('event captured');
+  if (event.keyCode === 221 && event.metaKey) { 
     event.preventDefault(); 
   }
   // prevent default behavior for Command + Control + F
-  if (event.metaKey && event.ctrlKey && event.keyCode === 70) { 
-    console.log('event captured');
+  if (event.keyCode === 70 && event.metaKey && event.ctrlKey) { 
     event.preventDefault(); 
   }
   // prevent default behavior for Command + Control + 1
-  if (event.metaKey && event.ctrlKey && event.keyCode === 49) { 
-    console.log('event captured');
+  if (event.keyCode === 49 && event.metaKey && event.ctrlKey) { 
     event.preventDefault(); 
   }
   // prevent default behavior for Command + F
-  if (event.metaKey && event.keyCode === 70) { 
-    console.log('event captured');
+  if (event.keyCode === 70 && event.metaKey) { 
     event.preventDefault(); 
   }
   // prevent default behavior for Command + -
-  if (event.metaKey && event.keyCode === 189) { 
-    console.log('event captured');
+  if (event.keyCode === 189 && event.metaKey) { 
     event.preventDefault(); 
   }
   // prevent default behavior for Command + =
-  if (event.metaKey && event.keyCode === 187) { 
-    console.log('event captured');
+  if (event.keyCode === 187 && event.metaKey) { 
     event.preventDefault(); 
   }
   // prevent default behavior for Command + ,
-  if (event.metaKey && event.keyCode === 188) { 
-    console.log('event captured');
+  if (event.keyCode === 188 && event.metaKey) { 
     event.preventDefault(); 
   }
   // prevent default behavior for Command + Option + H
-  if (event.metaKey && event.altKey && event.keyCode === 72) { 
-    console.log('event captured');
+  if (event.keyCode === 72 && event.metaKey && event.altKey) { 
     event.preventDefault(); 
   }
   // prevent default behavior for Command + Shift + 3
-  if (event.metaKey && event.shiftKey && event.keyCode === 51) { 
-    console.log('event captured');
+  if (event.keyCode === 51 && event.metaKey && event.shiftKey) { 
     event.preventDefault(); 
   }
   // prevent default behavior for Command + Shift + V
-  if (event.metaKey && event.shiftKey && event.keyCode === 86) { 
-    console.log('event captured');
+  if (event.keyCode === 86 && event.metaKey && event.shiftKey) { 
     event.preventDefault(); 
   }
   // prevent default behavior for Command + Shift + T
-  if (event.metaKey && event.shiftKey && event.keyCode === 84) { 
-    console.log('event captured');
+  if (event.keyCode === 84 && event.metaKey && event.shiftKey) { 
     event.preventDefault(); 
   }
   // prevent default behavior for Command + Shift + I
-  if (event.metaKey && event.shiftKey && event.keyCode === 73) { 
-    console.log('event captured');
+  if (event.keyCode === 73 && event.metaKey && event.shiftKey) { 
     event.preventDefault(); 
   }
   // prevent default behavior for Command + V
-  if (event.metaKey && event.keyCode === 86) { 
-    console.log('event captured');
+  if (event.keyCode === 86 && event.metaKey) { 
     event.preventDefault(); 
   }
   // prevent default behavior for Command + H
-  if (event.metaKey && event.keyCode === 72) { 
-    console.log('event captured');
+  if (event.keyCode === 72 && event.metaKey) { 
     event.preventDefault(); 
   }
   // prevent default behavior for Command + D
-  if (event.metaKey && event.keyCode === 68) { 
-    console.log('event captured');
+  if (event.keyCode === 68 && event.metaKey) { 
     event.preventDefault(); 
   }
   // prevent default behavior for Command + J
-  if (event.metaKey && event.keyCode === 74) { 
-    console.log('event captured');
+  if (event.keyCode === 74 && event.metaKey) { 
     event.preventDefault(); 
   }
   // prevent default behavior for Command + `
-  if (event.metaKey && event.keyCode === 192) { 
-    console.log('event captured');
+  if (event.keyCode === 192 && event.metaKey) { 
     event.preventDefault(); 
   }
   // prevent default behavior for Command + Y
-  if (event.metaKey && event.keyCode === 89) { 
-    console.log('event captured');
+  if (event.keyCode === 89 && event.metaKey) { 
     event.preventDefault(); 
   }
   // prevent default behavior for Command + G
-  if (event.metaKey && event.keyCode === 71) { 
-    console.log('event captured');
+  if (event.keyCode === 71 && event.metaKey) { 
     event.preventDefault(); 
   }
   // prevent default behavior for Command + A
-  if (event.metaKey && event.keyCode === 65) { 
-    console.log('event captured');
+  if (event.keyCode === 65 && event.metaKey) { 
     event.preventDefault(); 
   }
   // prevent default behavior for Command + C
-  if (event.metaKey && event.keyCode === 67) { 
-    console.log('event captured');
+  if (event.keyCode === 67 && event.metaKey) { 
     event.preventDefault(); 
   }
   // prevent default behavior for Command + X
-  if (event.metaKey && event.keyCode === 88) { 
-    console.log('event captured');
+  if (event.keyCode === 88 && event.metaKey) { 
     event.preventDefault(); 
   }
   // prevent default behavior for Command + Z
-  if (event.metaKey && event.keyCode === 90) { 
-    console.log('event captured');
+  if (event.keyCode === 90 && event.metaKey) { 
     event.preventDefault(); 
   }
   // prevent default behavior for Command + M
-  if (event.metaKey && event.keyCode === 77) { 
-    console.log('event captured');
+  if (event.keyCode === 77 && event.metaKey) { 
     event.preventDefault(); 
   }
   // prevent default behavior for Command + N
-  if (event.metaKey && event.keyCode === 78) { 
-    console.log('event captured');
+  if (event.keyCode === 78 && event.metaKey) { 
     event.preventDefault(); 
   }
   

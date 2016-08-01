@@ -8,7 +8,7 @@ var currentSet;
 // select menu - choose hint to have no delay, 5 seconds, or 10 seconds
 var hintDelay;
 
-// set up listener
+// set up keypress listener
 var inputField = $('.inputField');
 var listenerDefaults = {
     is_unordered: true,
@@ -60,7 +60,7 @@ $('.hints').change(function() {
   clearFields();
 });
 
-// determine which app's shortcuts objects to use
+// determine app choice - sublime or atom
 var chooseApp = function() {
   var appChoice = $('.apps option:selected').val();
   clearFields();
@@ -99,7 +99,7 @@ var practiceShortcuts = function() {
   // show command
   $('.command').text(currentSet[counter].command);
 
-  // variable for timeout id so it can be cleared later
+  // timeout id so it can be cleared later
   var revealShortcut1 = setTimeout(function() {
     // show answer as placeholder after chosen delay period
     $('.inputField').attr('placeholder', currentSet[counter].correct);
@@ -122,7 +122,7 @@ var practiceShortcuts = function() {
   listener.simple_combo(currentSet[counter].keys, function() {
     // show correct answer when user types it
     $('.inputField').attr('placeholder', currentSet[counter].correct);
-    // slight delay after user types correct answer so answer doesn't disappear immediately
+    // delay after user types correct answer so answer doesn't disappear immediately
     setTimeout(function() {
       // if user types correct keys, prevent hint from displaying
       clearTimeout(revealShortcut1);
