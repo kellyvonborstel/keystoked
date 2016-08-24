@@ -8,8 +8,7 @@
 body {
   font-family: 'Lucida Grande', Verdana, sans-serif;
   text-align: center;
-  background-color: #89d2f0;
-  background-image: url('../images/background.png');
+  background: url('../images/background.png') repeat-x #99d0ed;
   box-sizing: border-box;
 }
 
