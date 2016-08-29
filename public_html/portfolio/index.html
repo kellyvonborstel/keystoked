@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Kelly von Borstel — Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kelly von Borstel">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="css/bootstrapTheme.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    </style>
+  </head>
+  <body>
+
+  <header>
+    <h1 class="name">Kelly von Borstel</h1>
+    <ul class="links">
+      <li><a href="https://www.linkedin.com/in/kellyvonborstel" target="_blank">LinkedIn</a></li>
+      <li><a href="https://github.com/kellyvonborstel">GitHub</a></li>
+      <li><a href="mailto:kellyvonborstel@gmail.com">Email</a></li>
+    </ul>
+  </header>
+  <div class="title">
+    <h1>Portfolio</h1>
+    <h2>Graphic Design and Web Development</h2>
+  </div>
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <div id="owl-demo" class="owl-carousel">
+
+              <div class="item">
+                <div class="image">
+                  <img src="images/mammo-brochure.jpg" data-src="images/mammo-brochure.jpg">
+                </div>
+                <!-- <div class="description-container"> -->
+                  <div class="description">
+                    <h2>Client</h2>
+                    <p>Santiam Hospital Mammography Center</p>
+                    <h2>Project</h2>
+                    <p>Brochure to promote breast cancer awareness and the importance of mammograms</p>
+                    <h2>Role</h2>
+                    <p>Searched stock photos and illustrations, created graphics, retouched photos, designed layout, coordinated with printer</p>
+                    <h2>Tech</h2>
+                    <p>Photoshop, Illustrator, InDesign</p>
+                    <h2><a href="http://kellyvonborstel.com">View Website</a></h2>
+                  </div>
+                <!-- </div> -->
+              </div>
+
+              <div class="item">
+                <div class="image">
+                  <img src="images/garden-angels-small.jpg" data-src="images/garden-angels-small.jpg">
+                </div>
+                <div class="description">
+                  <h2>Client:</h2>
+                  <p>Santiam Memorial Mammography Center</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                  <img src="images/whs-poster.jpg" data-src="images/whs-poster.jpg">
+                </div>
+                <div class="description">
+                  <p>This is a description</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                  <img src="images/garden-angels-small.jpg" data-src="images/garden-angels-small.jpg">
+                </div>
+                <div class="description">
+                  <p>This is a description</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <script src="js/jquery-1.9.1.min.js"></script> 
+    <script src="js/owl.carousel.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#owl-demo").owlCarousel({
+          navigation : true,
+          slideSpeed : 300,
+          paginationSpeed : 400,
+          singleItem : true,
+          afterInit : function(elem){
+            var that = this
+            that.owlControls.prependTo(elem)
+          }
+        });
+      });
+    </script>
+    <script src="js/application.js"></script>
+
+  </body>
+</html>
