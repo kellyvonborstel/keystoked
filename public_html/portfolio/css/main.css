@@ -50,24 +50,51 @@ a:hover {
   color: #444;
 }
 
+.owl-carousel {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .owl-wrapper-outer {
+  width: 100%;
   max-width: 1170px;
   margin: 0 auto;
 }
 
+.owl-theme .owl-controls .owl-buttons div {
+  display: none;
+  background-color: transparent;
+  color: #999;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 100;
+  font-size: 4em;
+}
+
+@media screen and (min-width: 768px) {
+  .owl-theme .owl-controls .owl-buttons div {
+    display: inline-block;
+  }
+}
+
+.owl-theme .owl-controls .owl-page span {
+  background-color: #aaa;
+}
+
+
 header {
   width: 100%;
   max-width: 1120px;
-  padding: 25px 25px 10px;
-  margin: 0 auto 40px;
+  padding: 30px 25px 15px;
+  margin: 0 auto 30px;
 }
 
 .name {
   float: left;
-  font-size: 1.4em;
-  font-weight: 600;
-  /*padding-bottom: 0;*/
-  /*padding-left: 40px;*/
+  font-size: 1.1em;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .02em;
 }
 
 .links {
@@ -76,6 +103,8 @@ header {
 }
 
 .links li {
+/*  position: relative;
+  top: 1px;*/
   display: inline;
   padding: 0 15px;
 }
@@ -127,8 +156,8 @@ header {
 }
 
 .owl-item a {
-  color: #f7f7f7;
-  background-color: #444;
+  color: #fff;
+  background-color: #666;
   padding: 10px 15px;
   margin-top: 8px;
   display: inline-block;
@@ -137,7 +166,7 @@ header {
 }
 
 .owl-item a:hover {
-  background-color: #666;
+  background-color: #888;
 }
 
 #owl-demo .item img{
@@ -151,7 +180,64 @@ header {
   padding: 30px;
 }
 
+.owl-pagination {
+  /*display: none;*/
+}
+
+.owl-carousel {
+  position: relative;
+}
+
+.owl-prev {
+  display: none;
+}
+
+.owl-next {
+  display: none;
+}
+
+/*@media screen and (min-width: 768px) {
+
+  .owl-prev {
+    display: initial;
+    position: absolute;
+    left: 0px;
+    top: 25%;
+  }
+
+  .owl-next {
+    display: initial;
+    right: 0px;
+    position: absolute;
+    top: 25%;
+  }
+}*/
+
+@media screen and (min-width: 768px) {
+
+  .owl-prev {
+    position: absolute;
+    left: -55px;
+    top: 38%;
+  }
+
+  .owl-next {
+    position: absolute;
+    right: -55px;
+    top: 38%;
+  }
+
+  .owl-carousel {
+    width: 92%;
+  }
+}
+
 @media screen and (min-width: 1024px) {
+
+  .owl-carousel {
+    width: 98%;
+  }
+
   .image {
     float: left;
     width: 70%;
