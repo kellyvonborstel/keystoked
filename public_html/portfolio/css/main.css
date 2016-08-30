@@ -16,7 +16,7 @@ nav, section {
 
 /* HTML5 display-role reset for older browsers */
 
-article, aside, footer, header, nav, section {
+footer, header, section {
   display: block;
 }
 
@@ -28,6 +28,7 @@ ul {
 /* GLOBAL */
 
 html {
+  position: relative;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
@@ -38,10 +39,10 @@ html {
 }
 
 body {
-  width: 100% !important;
-  height: 100% !important;
-  font: 16px/1.4 'Open Sans', sans-serif;
-  font-weight: 400;
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 120px;
+  font: 400 16px/1.4 'Open Sans', sans-serif;
   color: #999;
 }
 
@@ -50,103 +51,149 @@ a {
 }
 
 a:hover {
+  color: #555;
   text-decoration: none;
-  color: #444;
 }
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/*-------------------------------------*/
+/* HEADER */
+
+header {
+  width: 100%;
+  max-width: 920px;
+  margin: 15px auto 0;
+  text-align: center;
+}
+
+.name {
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+}
+
+.links {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.links li {
+  display: inline;
+}
+
+.links a {
+  padding: 20px;
+  font-size: .9em;
+  color: #666;
+}
+
+.links a:hover {
+  color: #111;
+}
+
+@media screen and (min-width: 480px) {
+  header {
+    max-width: 920px;
+    padding: 5px 5px 40px 25px;
+  }
+
+  .name {
+    float: left;
+  }
+
+  .links {
+    float: right;
+    width: 60%;
+    padding: 0;
+    text-align: right;
+    background-color: transparent;
+  }
+
+  .links a {
+    color: #999;
+    padding: 15px;
+  }
+
+  .links a:hover {
+    color: #444;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .name {
+    font-size: 1.1em;
+  }
+
+  .links a {
+    padding: 20px;
+    font-size: 1em;
+  }
+}
+
+/*-------------------------------------*/
+/* TITLE */
+
+.title {
+  padding: 20px 5px 25px;
+  margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #333;
+}
+
+.title h2 {
+  font-size: 2.1em;
+  color: #fff;
+}
+
+.title h3 {
+  font-size: .9em;
+  letter-spacing: .1em;
+  line-height: 1.3;
+  color: #aaa;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    padding: 40px 5px 50px;
+    margin-bottom: 40px;
+  }
+
+  .title h2 {
+    font-size: 3.8em;
+  }
+
+  .title h3 {
+    font-size: 1.25em;
+    line-height: 1.3;
+  }
+}
+
+/*-------------------------------------*/
+/* CAROUSEL */
 
 .owl-carousel {
   width: 100%;
   margin: 0 auto;
 }
 
-.owl-wrapper-outer {
-  width: 100%;
-  max-width: 1170px;
-  margin: 0 auto;
-}
-
-.owl-theme .owl-controls .owl-buttons div {
-  display: none;
-  background-color: transparent;
-  color: #999;
-  font-family: 'Catamaran', sans-serif;
-  font-weight: 100;
-  font-size: 4em;
-}
-
-@media screen and (min-width: 768px) {
-  .owl-theme .owl-controls .owl-buttons div {
-    display: inline-block;
-  }
-}
-
-.owl-theme .owl-controls .owl-page span {
-  background-color: #aaa;
-}
-
-
-header {
-  width: 100%;
-  max-width: 1120px;
-  padding: 30px 25px 15px;
-  margin: 0 auto 30px;
-}
-
-.name {
-  float: left;
-  font-size: 1.1em;
-  font-weight: 400;
-  text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: .02em;
-}
-
-.links {
-  float: right;
-  margin-right: 30px;
-}
-
-.links li {
-/*  position: relative;
-  top: 1px;*/
-  display: inline;
-  padding: 0 15px;
-}
-
-.title {
-  font-family: 'Montserrat', sans-serif;
-  width: 100%;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 50px 5px 60px;
-  margin-bottom: 50px;
-  text-transform: uppercase;
-}
-
-.title h1 {
-  font-size: 4em;
-}
-
-.title h2 {
-  letter-spacing: .1em;
-  color: #aaa;
-  font-size: 1.3em;
-  font-weight: 400;
-  line-height: 1;
-}
-
 .owl-item {
   background-color: #bbb;
-  height: 100%;
-  position: relative;
 }
 
-.owl-item h2 {
+.owl-item h4 {
+  font-size: .9em
   color: #444;
   letter-spacing: .05em;
   text-transform: uppercase;
-  font-size: .9em
 }
 
 .owl-item p {
@@ -160,23 +207,18 @@ header {
 }
 
 .owl-item a {
+  display: inline-block;
+  padding: 8px 15px;
+  margin-top: 7px;
+  border-radius: 5px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
   color: #fff;
   background-color: #666;
-  padding: 10px 15px;
-  margin-top: 8px;
-  display: inline-block;
-  letter-spacing: .1em;
-  border-radius: 5px;
 }
 
 .owl-item a:hover {
   background-color: #888;
-}
-
-#owl-demo .item img{
-   display: block;
-   width: 100%;
-   height: 100%;
 }
 
 .description {
@@ -184,60 +226,13 @@ header {
   padding: 30px;
 }
 
-.owl-pagination {
-  /*display: none;*/
-}
-
-.owl-carousel {
-  position: relative;
-}
-
-.owl-prev {
-  display: none;
-}
-
-.owl-next {
-  display: none;
-}
-
-/*@media screen and (min-width: 768px) {
-
-  .owl-prev {
-    display: initial;
-    position: absolute;
-    left: 0px;
-    top: 25%;
-  }
-
-  .owl-next {
-    display: initial;
-    right: 0px;
-    position: absolute;
-    top: 25%;
-  }
-}*/
-
 @media screen and (min-width: 768px) {
-
-  .owl-prev {
-    position: absolute;
-    left: -55px;
-    top: 38%;
-  }
-
-  .owl-next {
-    position: absolute;
-    right: -55px;
-    top: 38%;
-  }
-
   .owl-carousel {
     width: 92%;
   }
 }
 
 @media screen and (min-width: 1024px) {
-
   .owl-carousel {
     width: 98%;
   }
@@ -254,8 +249,57 @@ header {
 
   .description {
     position: absolute;
-    right: 0;
     top: 50%;
+    right: 0;
     transform: translateY(-50%);
   }
+}
+
+/*-------------------------------------*/
+/* CAROUSEL CONTROLS */
+
+.owl-theme .owl-controls .owl-buttons div {
+  display: none;
+}
+
+.owl-theme .owl-controls .owl-page span {
+  background-color: #aaa;
+}
+
+@media screen and (min-width: 768px) {
+  .owl-theme .owl-controls .owl-buttons div {
+    display: inline-block;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 4em;
+    font-weight: 100;
+    color: #999;
+    background-color: transparent;
+  }
+
+  .owl-prev {
+    position: absolute;
+    top: 38%;
+    left: -55px;
+  }
+
+  .owl-next {
+    position: absolute;
+    top: 38%;
+    right: -55px;
+  }
+}
+
+/*-------------------------------------*/
+/* FOOTER */
+
+footer {
+  background-color: #333;
+  padding: 20px 0 25px;
+  font-size: .85em;
+  text-align: center;
+  color: #ccc;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
