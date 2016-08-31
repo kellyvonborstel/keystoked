@@ -55,7 +55,7 @@ a {
   color: #999;
 }
 
-a:hover {
+a:link, a:visited, a:hover, a:active {
   color: #555;
   text-decoration: none;
 }
