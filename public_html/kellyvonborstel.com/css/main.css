@@ -1,0 +1,306 @@
+/* MODIFIED MEYER RESET */
+
+html, body, div, span,
+h1, h2, h3, h4, h5, h6,
+p, a, address, em, img,
+strong, ul, li, article,
+aside, footer, header,
+nav, section {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+footer, header, section {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+/*-------------------------------------*/
+/* GLOBAL */
+
+html {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 120px;
+  font: 400 16px/1.4 'Open Sans', sans-serif;
+  color: #999;
+}
+
+a {
+  color: #999;
+}
+
+a:hover {
+  color: #555;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/*-------------------------------------*/
+/* HEADER */
+
+header {
+  width: 100%;
+  max-width: 920px;
+  margin: 15px auto 0;
+  text-align: center;
+}
+
+.name {
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+}
+
+.links {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.links li {
+  display: inline;
+}
+
+.links a {
+  padding: 20px;
+  font-size: .9em;
+  color: #666;
+}
+
+.links a:hover {
+  color: #111;
+}
+
+@media screen and (min-width: 480px) {
+  header {
+    max-width: 920px;
+    padding: 5px 5px 40px 25px;
+  }
+
+  .name {
+    float: left;
+  }
+
+  .links {
+    float: right;
+    width: 60%;
+    padding: 0;
+    text-align: right;
+    background-color: transparent;
+  }
+
+  .links a {
+    color: #999;
+    padding: 15px;
+  }
+
+  .links a:hover {
+    color: #444;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .name {
+    font-size: 1.1em;
+  }
+
+  .links a {
+    padding: 20px;
+    font-size: 1em;
+  }
+}
+
+/*-------------------------------------*/
+/* TITLE */
+
+.title {
+  padding: 20px 5px 25px;
+  margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #333;
+}
+
+.title h2 {
+  font-size: 2.1em;
+  color: #fff;
+}
+
+.title h3 {
+  font-size: .9em;
+  letter-spacing: .1em;
+  line-height: 1.3;
+  color: #aaa;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    padding: 40px 5px 50px;
+    margin-bottom: 40px;
+  }
+
+  .title h2 {
+    font-size: 3.8em;
+  }
+
+  .title h3 {
+    font-size: 1.25em;
+    line-height: 1.3;
+  }
+}
+
+/*-------------------------------------*/
+/* CAROUSEL */
+
+.owl-carousel {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.owl-item {
+  background-color: #bbb;
+}
+
+.owl-item h4 {
+  font-size: .9em
+  color: #444;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.owl-item p {
+  margin-bottom: 20px;
+  font-size: .85em;
+  letter-spacing: .01em;
+}
+
+.owl-item p:last-child {
+  margin-bottom: 5px;
+}
+
+.owl-item a {
+  display: inline-block;
+  padding: 8px 15px;
+  margin-top: 7px;
+  border-radius: 5px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #666;
+}
+
+.owl-item a:hover {
+  background-color: #888;
+}
+
+.description {
+  color: #666;
+  padding: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .owl-carousel {
+    width: 92%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .owl-carousel {
+    width: 98%;
+  }
+
+  .image {
+    float: left;
+    width: 70%;
+  }
+
+  .description {
+    float: right;
+    width: 30%;
+  }  
+
+  .description {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+}
+
+/*-------------------------------------*/
+/* CAROUSEL CONTROLS */
+
+.owl-theme .owl-controls .owl-buttons div {
+  display: none;
+}
+
+.owl-theme .owl-controls .owl-page span {
+  background-color: #aaa;
+}
+
+@media screen and (min-width: 768px) {
+  .owl-theme .owl-controls .owl-buttons div {
+    display: inline-block;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 4em;
+    font-weight: 100;
+    color: #999;
+    background-color: transparent;
+  }
+
+  .owl-prev {
+    position: absolute;
+    top: 38%;
+    left: -55px;
+  }
+
+  .owl-next {
+    position: absolute;
+    top: 38%;
+    right: -55px;
+  }
+}
+
+/*-------------------------------------*/
+/* FOOTER */
+
+footer {
+  background-color: #333;
+  padding: 15px 0 30px;
+  font-size: .85em;
+  text-align: center;
+  color: #ccc;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  letter-spacing: .01em;
+}
