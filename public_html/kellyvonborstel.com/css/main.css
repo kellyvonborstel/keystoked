@@ -14,8 +14,6 @@ nav, section {
   border: 0;
 }
 
-/* HTML5 display-role reset for older browsers */
-
 footer, header, section {
   display: block;
 }
@@ -47,8 +45,8 @@ body {
 }
 
 strong {
-  font-weight: 800;
   font-style: italic;
+  font-weight: 800;
 }
 
 a {
@@ -160,8 +158,8 @@ header {
 
 .title h3 {
   font-size: .9em;
-  letter-spacing: .1em;
   line-height: 1.3;
+  letter-spacing: .1em;
   color: #aaa;
 }
 
@@ -214,13 +212,13 @@ header {
   display: inline-block;
   padding: 7px 14px;
   margin-top: 7px;
-  border-radius: 5px;
   font-size: .85em;
   letter-spacing: .1em;
   word-spacing: .1em;
-  text-transform: uppercase;
   color: #fff;
+  text-transform: uppercase;
   background-color: #666;
+  border-radius: 5px;
 }
 
 .owl-item a:hover {
@@ -228,8 +226,8 @@ header {
 }
 
 .description {
-  color: #666;
   padding: 30px;
+  color: #666;
 }
 
 @media screen and (min-width: 768px) {
@@ -299,14 +297,14 @@ header {
 /* FOOTER */
 
 footer {
-  background-color: #333;
-  padding: 15px 0 30px;
-  font-size: .85em;
-  text-align: center;
-  color: #ccc;
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
+  padding: 15px 0 30px;
+  font-size: .85em;
   letter-spacing: .01em;
+  color: #ccc;
+  text-align: center;
+  background-color: #333;
 }
