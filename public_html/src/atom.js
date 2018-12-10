@@ -185,11 +185,6 @@ var atomShortcuts = {
       keys: 'meta shift p' 
     },
     {
-      command: 'Toggle full screen',
-      correct: '⌘ + ^ + F',
-      keys: 'meta ctrl f' 
-    },
-    {
       command: 'Hide other applications',
       correct: '⌘ + ⌥ + H',
       keys: 'meta option h' 

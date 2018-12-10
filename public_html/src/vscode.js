@@ -120,11 +120,6 @@ var vsCodeShortcuts = {
 
   general: [
     {
-      command: 'Toggle full screen',
-      correct: '⌘ + ^ + F',
-      keys: 'meta ctrl f' 
-    },
-    {
       command: 'Show debug',
       correct: '⌘ + ⇧ + D',
       keys: 'meta shift d' 

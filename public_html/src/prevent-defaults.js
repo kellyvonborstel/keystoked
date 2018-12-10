@@ -110,10 +110,6 @@ var preventDefaultBehaviors = function() {
   if (event.keyCode === 66 && event.metaKey && event.altKey) { 
     event.preventDefault(); 
   }
-  // prevent default behavior for Command + Control + F
-  if (event.keyCode === 70 && event.metaKey && event.ctrlKey) { 
-    event.preventDefault(); 
-  }
   // prevent default behavior for Command + Option + H
   if (event.keyCode === 72 && event.metaKey && event.altKey) { 
     event.preventDefault(); 

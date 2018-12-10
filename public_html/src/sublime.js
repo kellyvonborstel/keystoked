@@ -180,11 +180,6 @@ var sublimeShortcuts = {
       keys: 'meta shift p' 
     },
     {
-      command: 'Toggle full screen',
-      correct: '⌘ + ^ + F',
-      keys: 'meta ctrl f' 
-    },
-    {
       command: 'Zoom out',
       correct: '⌘ + -',
       keys: 'meta -' 
