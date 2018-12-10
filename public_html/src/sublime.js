@@ -109,11 +109,6 @@ var sublimeShortcuts = {
       keys: 'meta l' 
     },
     {
-      command: 'Select contents of current parentheses',
-      correct: '⌃ + ⇧ + M',
-      keys: 'ctrl shift m' 
-    },
-    {
       command: 'Select current indentation',
       correct: '⌘ + ⇧ + J',
       keys: 'meta shift j' 
