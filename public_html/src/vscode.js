@@ -143,7 +143,7 @@ var vsCodeShortcuts = {
       command: 'Toggle sidebar visibility',
       correct: '⌘ + B',
       keys: 'meta b' 
-    }
+    },
     {
       command: 'Save all',
       correct: '⌘ + ⌥ + S',
