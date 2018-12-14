@@ -47,7 +47,7 @@ var atomShortcuts = {
   navigate: [
     {
       command: 'Go to line',
-      correct: '^ + G',
+      correct: '⌃ + G',
       keys: 'ctrl g' 
     },
     {
