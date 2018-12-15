@@ -73,6 +73,8 @@ var chooseEditor = function() {
     editor = atomShortcuts;
   } else if (editorChoice === 'vscode') {
     editor = vsCodeShortcuts;
+  } else if (editorChoice === 'jetbrains') {
+    editor = jetBrainsShortcuts;
   } else {
     editor = sublimeShortcuts;
   }

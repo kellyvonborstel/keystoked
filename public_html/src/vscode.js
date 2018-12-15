@@ -47,7 +47,7 @@ var vsCodeShortcuts = {
   navigate: [
     {
       command: 'Go to line',
-      correct: '^ + G',
+      correct: '⌃ + G',
       keys: 'ctrl g' 
     },
     {
@@ -62,7 +62,7 @@ var vsCodeShortcuts = {
     },
     {
       command: 'Go back',
-      correct: '^ + -',
+      correct: '⌃ + -',
       keys: 'ctrl -' 
     }
   ],

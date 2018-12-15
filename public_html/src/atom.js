@@ -80,12 +80,12 @@ var atomShortcuts = {
   select: [
     {
       command: 'Select left character',
-      correct: '⇧ + ^ + B',
+      correct: '⇧ + ⌃ + B',
       keys: 'shift ctrl b' 
     },
     {
       command: 'Select right character',
-      correct: '⇧ + ^ + F',
+      correct: '⇧ + ⌃ + F',
       keys: 'shift ctrl f' 
     },
     {

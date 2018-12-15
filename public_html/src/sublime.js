@@ -82,12 +82,12 @@ var sublimeShortcuts = {
     },
     {
       command: 'Go to line in current file',
-      correct: '^ + G',
+      correct: '⌃ + G',
       keys: 'ctrl g' 
     },
     {
       command: 'Jump to column or group 2',
-      correct: '^ + 2',
+      correct: '⌃ + 2',
       keys: 'ctrl 2' 
     },
     {
